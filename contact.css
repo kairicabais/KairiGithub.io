@@ -1,0 +1,474 @@
+
+/*contact page*/
+
+*{
+    margin: 0px;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400u;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+}
+
+/*header for the navbar design*/
+header {
+    background-color: #f8f6e9;
+    width: 100%;
+    position: fixed;
+    top: 20;
+    left: 20;
+    z-index: 500;
+    display: flex;
+    justify-content: auto;
+    align-items: auto;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+  }
+  
+  
+/*navbar*/
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px; /* Increased font size */
+  font-weight: 400; /*font weight*/
+}
+/*underline text on hover*/
+nav ul li a:hover {
+  text-decoration: underline;
+  
+}
+/*extra nav dropdown*/
+nav ul li a {
+  padding: 3px;
+  display:inline-block;
+  color:rgb(0, 0, 0);
+  text-decoration:none;
+}
+nav ul li ul {
+  display:none;
+  position:auto;
+  left:0;
+  background:#f8f6e9;
+  float:auto;
+}
+nav ul li ul li {
+  width:100%;
+  border-bottom:1px solid rgba(255, 255, 255, 0);
+}
+nav ul li:hover ul {
+  display:block;
+}
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  background-color: #f8f6e9;
+}
+
+/*sticky navbar on top*/
+.navbar {
+    padding: 16px;
+
+  }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .navbar {
+    padding-top: 60px;
+  }
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+  /*font for my whole website*/
+  body {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400u;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+  }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #f8f6e9;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+body {
+    background: #f8f6e9;
+    color: #b3aca7;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400u;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+  }
+
+h1 {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+/*e-mail and name boxes*/
+input {
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400u;
+  font-style: normal;
+  font-variation-settings: 
+  "wdth" 100;
+  
+  background: transparent;
+  outline: none;
+  color: #3e2a15;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+/*animation on hover in input boxes*/
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+/*message box*/
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+/*font settings*/
+  color: #726659;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400u;
+  font-style: normal;
+  font-variation-settings: 
+  "wdth" 100;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+/*submit box*/
+#submit {
+  width: 502px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+/*font settings*/
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400u;
+  font-style: normal;
+  font-variation-settings: 
+  "wdth" 100;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+/*hover color*/
+#submit:hover {
+  color: #e2dedb; 
+}
+
+
+
+
+  
+/*footer*/
+.site-footer {
+    background-color: #f8f6e9;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1e1e1e;
+  }
+  .site-footer hr {
+    border-top-color: #1e1e1e;
+    opacity: 0.5;
+    padding: 5px;
+  }
+  .site-footer hr.small {
+    margin: 20px 0;
+  }
+  .site-footer h6 {
+    color: #1e1e1e;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+  }
+  .site-footer a {
+    color: #737373;
+  }
+  .site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  .footer-links {
+    padding-left: 0;
+    list-style: none;
+  }
+  .footer-links li {
+    display: block;
+  }
+  .footer-links a {
+    color: #737373;
+  }
+  .footer-links a:active,
+  .footer-links a:focus,
+  .footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  .footer-links.inline li {
+    display: inline-block;
+  }
+  .site-footer .social-icons {
+    text-align: right;
+  }
+  .site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #f8f6e9;
+  }
+  .copyright-text {
+    margin: 0;
+  }
+  @media (max-width: 991px) {
+    .site-footer [class^="col-"] {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .site-footer {
+      padding-bottom: 0;
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+      text-align: center;
+    }
+  }
+  .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .social-icons a:active,
+  .social-icons a:focus,
+  .social-icons a:hover {
+    color: #fff;
+    background-color:#f8f6e9;
+  }
+  .social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+  }
+  .social-icons a.facebook:hover {
+    background-color: #3b5998;
+  }
+  .social-icons a.twitter:hover {
+    background-color: #00aced;
+  }
+  .social-icons a.linkedin:hover {
+    background-color: #007bb6;
+  }
+  .social-icons a.dribbble:hover {
+    background-color: #ea4c89;
+  }
+  @media (max-width: 767px) {
+    .social-icons li.title {
+      display: block;
+      margin-right: 0;
+      font-weight: 600;
+    }
+  div.Time {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #73AD21;
+    }
+  }
+  
