@@ -1,0 +1,52 @@
+
+[
+    {
+        "id": 1,
+        "name":" Aero blue summer shirt",
+        "price": 108.00,
+        "image": "img folder/01.png"
+    },
+    {
+        "id": 2,
+        "name":" Cybernight Tech Pant",
+        "price": 527.00,
+        "image": "img folder/02.png"
+    },
+    {
+        "id": 3,
+        "name":" Box white layerable sleeve",
+        "price": 527.00,
+        "image": "img folder/03.png"
+    },
+    {
+        "id": 4,
+        "name":" Nerd grey jorts",
+        "price": 323.00,
+        "image": "img folder/04.png"
+    },
+    {
+        "id": 5,
+        "name":" K.O Night Hoodie ",
+        "price":   568.00,
+        "image": "img folder/05.png"
+    },
+    {
+        "id": 6,
+        "name":" Wooden sweatpants",
+        "price": 568.00,
+        "image": "img folder/06.png"
+    },
+    {
+        "id": 7,
+        "name":" Milk tea button shirt",
+        "price": 323.0,
+        "image": "img folder/07.png"
+    },
+    {
+        "id": 8,
+        "name":" Worker navy pants",
+        "price": 568.00,
+        "image": "img folder/08.png"
+    }
+
+]
