@@ -1,0 +1,338 @@
+body{
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+    background-color: #f8f6e9;
+}
+/*grid container*/
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    column-gap: 0px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.icon-cart{
+    position: relative;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large; /*Adding xx-large = 32px*/
+    padding: 50px;
+}
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px rgba(0, 0, 0, 0.426));
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    background-color: #f8f6e9;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    padding: 10px;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    padding: 10px;
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    /*button font */
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400u;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+}
+
+/* cart */
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400u;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400u;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+/*font for my whole website*/
+body {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400u;
+  font-style: normal;
+  font-variation-settings: 
+  "wdth" 100;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  div.gallery img {
+    height: 357px;
+    width: 300px;
+  } 
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  } 
+  * {
+    margin: 0%;
+    box-sizing: border-box;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+/*header for the navbar design*/
+  header {
+    background-color: #f8f6e9;
+    width: 100%;
+    position: fixed;
+    top: 20;
+    left: 20;
+    z-index: 500;
+    display: flex;
+    justify-content: auto;
+    align-items: auto;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 
+    "wdth" 100;
+  }
+  
+  
+/*navbar*/
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px; /* Increased font size */
+  font-weight: 400; /*font weight*/
+}
+/*underline text on hover*/
+nav ul li a:hover {
+  text-decoration: underline;
+  
+}
+/*extra nav dropdown*/
+nav ul li a {
+  padding: 3px;
+  display:inline-block;
+  color:rgb(0, 0, 0);
+  text-decoration:none;
+}
+nav ul li ul {
+  display:none;
+  position:auto;
+  left:0;
+  background:#f8f6e9;
+  float:auto;
+}
+nav ul li ul li {
+  width:100%;
+  border-bottom:1px solid rgba(255, 255, 255, 0);
+}
+nav ul li:hover ul {
+  display:block;
+}
+
+
+
+
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  background-color: #f8f6e9;
+}
